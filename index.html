@@ -7,8 +7,6 @@ robots: noindex
 
   <ul class="timeline">
     
-    {% for project in site.data.projects %}
-
       <li class="timeline-inverted">
         <div class="timeline-image">
           <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
@@ -18,13 +16,9 @@ robots: noindex
             <h4><a href="https://www.sciencedirect.com/science/article/pii/S2667295222000113" target="_blank">Paper: "When blockchain meets smart grids: A comprehensive survey"</a></h4>
           </div>
           <div class="timeline-body">
-            {% if project.desc %}
-              {{ project.desc | markdownify }ssssssssss}
-            {% else %}
-            <div repotext="{{ project.repo }}xxxxxxxxxxxxx">
-              <span class="desc"></div>
+            <h4><a target="_blank">XXXXXXXXXX</a></h4>
+              <span class="desc"><h4><a target="_blank">SSSSSSSSSS</a></h4></div>
             </div>
-            {% endif %}
             <!--<div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
               <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"><i class="fa fa-star"></i><span class="star"> ...</span></a>&emsp;&emsp;
               <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"><i class="fa fa-code-fork"></i><span class="fork"> ...</span></a>&emsp;&emsp;
@@ -33,7 +27,7 @@ robots: noindex
           </div>
         </div>
       </li>
-    {% endfor %}
+
     <!--
     <li class="timeline-inverted">
       <div class="timeline-image">
