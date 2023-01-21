@@ -9,11 +9,11 @@
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
         <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
-          <img src="{{ site.baseurl }}{{ site.profilepic }}" class="user-image" alt="My Profile Photo">
-          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
+        <img src="../images/me2.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">Hi! I am Yihao.</h1>
         </a>
         <hr class="panel-cover__divider">
-        <p class="panel-cover__description">Working at <a href="https://www.arvato-systems.de">Arvato Systems</a> as developer and architect for Azure <i class="fas fa-cloud"></i>.</p>
+        <p class="panel-cover__description">Pursuing a Ph.D. degree in the <a href="http://www.iic.sdu.edu.cn/"> Institute of Intelligent Computing (IIC)</a>, <a href="https://www.cs.sdu.edu.cn/">School of Computer Science and Technology, Shandong University, P.R.China. </a>  <i class="fas fa-cloud"></i></p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
         <div class="navigation-wrapper">
@@ -54,16 +54,8 @@
               </li>
             {% endif %}
 
-            {% if site.author.github_username %}
-              <!-- GitHub -->
-              <li class="navigation__item">
-                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <!--<i class="icon icon-social-github"></i>-->
-                  <i class="fab fa-github fa-lg"></i>
-                  <span class="label">GitHub</span>
-                </a>
-              </li>
-            {% endif %}
+
+
 
             {% if site.author.meetup_name %}
             <!-- Meetup -->
@@ -86,16 +78,29 @@
                 </a>
               </li>
             {% endif %}
-
+			
+			{% if site.author.github %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/yihao-guo" title="Yihao Guo on GitHub" target="_blank">
+                  <!--<i class="icon icon-social-github"></i>-->
+                  <i class="fab fa-github fa-lg"></i>
+                  <!--<span class="label">GitHub</span>-->
+				  &nbsp;GitHub</a></li>
+                </a>
+              </li>
+			  {% endif %}
+			  
             </ul>
           </nav>
           
           <!--<nav class="cover-navigation cover-navigation--primary">-->
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
-              <li class="navigation__item"><a href="https://www.thomas-zuehlke.de" title="link to Blog"><i class="fas fa-link fa-lg"></i>&nbsp;Blog</a></li>
-              <!--<li class="navigation__item"><a href="{{ site.baseurl }}/#" title="link to Tweets" class="panel-button"><i class="icon icon-social-twitter"></i>&nbsp;Tweets</a></li>-->
-              <li class="navigation__item"><a href="{{ site.baseurl }}/#projects" title="List of Projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i>&nbsp;Projects</a></li>
+			  <li class="navigation__item"><a href="https://www.github.com/yihao-guo" title="Yihao Guo on GitHub"><i class="fas fa-link fa-lg"></i>&nbsp;My Github</a></li>
+             <!-- <li class="navigation__item"><a href="https://blog.csdn.net/guoyihaoguoyihao" title="link to Blog"><i class="fas fa-link fa-lg"></i>&nbsp;Blog</a></li> -->
+              <li class="navigation__item"><a href="{{ site.baseurl }}/index_rewards.html" title="link to Rewards" class="panel-button"><i class="icon icon-social-twitter"></i>&nbsp;My Awards</a></li>
+              <li class="navigation__item"><a href="{{ site.baseurl }}/index_papers.html" title="List of Papers" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i>&nbsp;My Papers</a></li>
             </ul>
           </nav>
 
